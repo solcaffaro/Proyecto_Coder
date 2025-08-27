@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>NOSE.</title>
 
     <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-     <!-- CSS -->
-    <link rel="stylesheet" href="/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
 
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,123 +21,145 @@
 
 <body>
     <!--Encabezado del sitio-->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
 
-        <!--Nombre de la marca-->
-        <h1>NOSE.</h1>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a></li>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Tienda
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="shop.html">Remeras</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
-                <li><a class="dropdown-item" href="shop.html">Pantalones</a></li><!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="shop.html">accesorios</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-      <ul>
-        <!--Audio
+                <!--Nombre de la marca-->
+                <h1>NOSE.</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tienda
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shop.html">Remeras</a></li>
+                                <!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
+                                <li><a class="dropdown-item" href="shop.html">Pantalones</a></li>
+                                <!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="shop.html">accesorios</a></li>
+                                <!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+            <ul>
+                <!--Audio
             <audio src="surf_mac_miller.mp3" controls></audio>-->
-      </ul>
-    </nav>
-  </header>
+            </ul>
+        </nav>
+    </header>
 
-   <main>
+    <main>
     <section class="caja">
-     <h2>¿EN QUÉ TE PODEMOS AYUDAR?</h2>
-    <!--formulario-->
-     <div>
-                   
-            <p>Para hacer una pregunta completa el formulario</p>
-            <h4>Requerido *</h4>
+        <h2>¿EN QUÉ TE PODEMOS AYUDAR?</h2>
+
+        <p>Para hacer una pregunta, completa el formulario.</p>
+        <h4>Requerido *</h4>
+
+        <form>
             <div>
-             <label for="reason" class="input-field select-input ng-star-inserted">
-             <span aria-live="polite" class="input-label">Motivo *</span></label>
+                <label for="reason">Motivo *</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Por favor, selecciona un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="cambio">Cambio o Devolución</option>
+                    <option value="sugerencia">Sugerencia</option>
+                </select>
             </div>
+
             <div>
-                <form>
-                        <select id="reason" name="reason"><option>Por favor seleccione un motivo</option><label for="subject"><span aria-live="polite"> Motivo *</span></label>
-                            <div>
-                             <input type="text" id="subject" name="subject" autocomplete="on">
-                             <label for="customerComments"><span aria-live="polite" class="input-label"> Comentarios *</span></label>
-                            </div>
-                    
-                            <p>Información Personal</p>
-                    </div>
-                    <div>
-                            <label for="firstName"><span aria-live="polite" class="input-label"> Nombre </span></label>
-                            <input type="text" id="firstName">
-                    </div>
-                    <div>
-                        <label for="lastName"><span aria-live="polite" class="input-label"> Apellido</span></label>
-                        <input type="text" id="lastName">
-                    </div>
-                    <div>
-                        <label for="country"><span  aria-live="polite" class="input-label"> País</span></label><div>
-                        <input type="text" id="country" autocomplete="country"></div>
-                    </div>
-                    <div>
-                        <label for="emailAddress"><span aria-live="polite" class="input-label"> Email * </span></label>
-                        <input type="text" id="emailAddress" name="email" autocomplete="email">
-                    </div>
-                    <div>
-                        <button type="button"><input type="checkbox" tabindex="-1" aria-checked="true" ><span>Quiero recibir ofertas especiales</span><span class="d-none"></span></button></label>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
+                <label for="subject">Asunto *</label>
+                <input type="text" id="subject" name="subject" autocomplete="on" required>
             </div>
+
+            <div>
+                <label for="customerComments">Comentarios *</label>
+                <textarea id="customerComments" name="customerComments" required></textarea>
+            </div>
+
+            <p>Información Personal</p>
+            
+            <div>
+                <label for="firstName">Nombre</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Apellido</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div>
+                <label for="country">País</label>
+                <input type="text" id="country" name="country" autocomplete="country">
+            </div>
+
+            <div>
+                <label for="emailAddress">Email *</label>
+                <input type="email" id="emailAddress" name="email" autocomplete="email" required>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="specialOffers">
+                    <span>Quiero recibir ofertas especiales</span>
+                </label>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
     </section>
-   </main> 
-    
-    <footer>
-     <!--Formulario -->
-      <div>
-        <input type="text" name="email" id="newsletter" placeholder="email" data-validate="{required:true, 'validate-email':true}">
-        <label for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-      </div>
-      <div>
-        <input type="checkbox" id="checkboxText" name="checkboxText" required>
-        <label for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
-      </div>
-        
-        <!--Enlace absoluto-->
-        <a class= "link" href=https://https://www.instagram.com/">instagram</a>
-        <a class= "link" href="https://www.facebook.com/">facebook</a>
-        <a class= "link" href="https://x.com/">twitter</a>
+</main>
 
-        <h3>Desarrollado por sol caffaro</h3>
-    </footer>
+<footer>
+    <div>
+        <label for="newsletter">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
+        <input type="email" name="email" id="newsletter" placeholder="email" required>
+    </div>
 
-     <!--Js de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <div>
+        <input type="checkbox" id="newsletterTerms" name="newsletterTerms" required>
+        <label for="newsletterTerms">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
+    </div>
+
+    <a href="https://www.instagram.com/" target="_blank">instagram</a>
+    <a href="https://www.facebook.com/" target="_blank">facebook</a>
+    <a href="https://x.com/" target="_blank">twitter</a>
+
+    <h3>Desarrollado por sol caffaro</h3>
+</footer>
+
+    <!--Js de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
