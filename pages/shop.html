@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOSE.</title>
 
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
 
@@ -17,16 +20,51 @@
 <body>
     <!--Encabezado del sitio-->
    <header>
-    <!--Nombre de la marca-->
-            <h1>NOSE.</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
 
-    <!-- Menú de Navegación -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li><li><a href="shop.html">Tienda</a></li><li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <!--Nombre de la marca-->
+        <h1>NOSE.</h1>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="pages/shop.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
+                <li><a class="dropdown-item" href="#">Another action</a></li><!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <ul>
+        <!--Audio
+            <audio src="surf_mac_miller.mp3" controls></audio>-->
+      </ul>
     </nav>
-   </header>
+  </header>
 
    <main>
      <!--texto principal-->
@@ -63,6 +101,8 @@
         <h3>Desarrollado por sol caffaro</h3>
     </footer>
 
+     <!--Js de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     
 </body>
 </html>
