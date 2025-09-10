@@ -92,6 +92,12 @@ main{
     position: relative;
     min-height: 90%;
 }
+label{
+    color: #000000;
+    text-decoration: none;
+    align-items: center;    
+    margin-inline-start: 10px;
+}
 
 /*footer*/
 footer{
@@ -108,12 +114,6 @@ footer{
     margin-top: 50px;
     margin-left: 350px;
     margin-bottom: 50px;
-}
-label{
-    color: #F1F1F3;
-    text-decoration: none;
-    align-items: center;    
-    margin-inline-start: 10px;
 }
 h3{
     color: #F1F1F3;
