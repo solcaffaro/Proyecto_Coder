@@ -248,7 +248,7 @@ h3 {
 
 /*main*/
 .caja3 {
-  background-image: url("medios/cieloliso.jpeg");
+  background-image: url("../medios/cieloliso.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0px;

@@ -1,0 +1,42 @@
+/* Estilos especificos de contacto */
+
+.caja2 {
+  background-image: url("medios/cieloliso.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+
+  h2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  p {
+    color: #000000;
+    font-style: italic;
+    text-align: justify;
+    font-family: "bebas Neue", sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+
+  h4 {
+    color: #000000;
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10px;
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+
+  label {
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+    margin-inline-start: 10px;
+  }
+}
