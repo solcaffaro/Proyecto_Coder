@@ -11,7 +11,7 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/estilos.css">
 
   <!--Fuentes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 
 <body>
   <!--Encabezado del sitio-->
-  <header>
+  <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
@@ -61,10 +61,6 @@
           </form>
         </div>
       </div>
-      <ul>
-        <!--Audio
-            <audio src="surf_mac_miller.mp3" controls></audio>-->
-      </ul>
     </nav>
   </header>
 
@@ -95,21 +91,20 @@
       </div>
     </section>
 
-    <section>
+    <section class="formulario">
       <!--Formulario -->
-    <div>
-       <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-       <input type="text" name="email" placeholder="email"data-validate="{required:true, 'validate-email':true}">   
+      <div>
+        <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
+        <input type="text" name="email" placeholder="email"data-validate="{required:true, 'validate-email':true}">   
       </div>
-    <div>
-      <input type="checkbox" name="checkboxText" required>
-      <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
-    </div>
+     <div>
+       <input type="checkbox" name="checkboxText" required>
+       <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
+     </div>
     </section>
   </main>
 
   <footer>
-    
     <!--Enlace absoluto-->
     <a class="link" href="https://https://www.instagram.com/">instagram</a>
     <a class="link" href="https://www.facebook.com/">facebook</a>
