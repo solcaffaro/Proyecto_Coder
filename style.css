@@ -79,13 +79,12 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; /* Centra verticalmente */
 }
 .contenedor-imagenes img {
   margin-right: 0px;
   margin-bottom: 50px;
   width: 450px;
-  height: cover; /* Mantiene la proporción de la imagen */
+  height: cover;
 }
 main{
     background-color: #ffffff;   

@@ -11,7 +11,7 @@
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/estilos.css">
 
   <!--Fuentes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 
 <body>
   <!--Encabezado del sitio-->
-  <header>
+  <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
@@ -37,9 +37,6 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="pages/shop.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -47,12 +44,14 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="pages/shop.html">Remeras</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
-                <li><a class="dropdown-item" href="pages/shop.html">Pantalones</a></li><!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
                 <li>
                   <hr class="dropdown-divider">
                 </li>
                 <li><a class="dropdown-item" href="pages/shop.html">Accesorios</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
               </ul>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a></li>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -61,10 +60,6 @@
           </form>
         </div>
       </div>
-      <ul>
-        <!--Audio
-            <audio src="surf_mac_miller.mp3" controls></audio>-->
-      </ul>
     </nav>
   </header>
 
@@ -95,21 +90,20 @@
       </div>
     </section>
 
-    <section>
-      <!--Formulario -->
-    <div>
-       <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-       <input type="text" name="email" placeholder="email"data-validate="{required:true, 'validate-email':true}">   
+    <!--Formulario -->
+    <section class="formulario">
+      <div>
+        <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
+        <input type="text" name="email" placeholder="email"data-validate="{required:true, 'validate-email':true}">   
       </div>
-    <div>
-      <input type="checkbox" name="checkboxText" required>
-      <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
-    </div>
+     <div>
+       <input type="checkbox" name="checkboxText" required>
+       <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
+     </div>
     </section>
   </main>
 
   <footer>
-    
     <!--Enlace absoluto-->
     <a class="link" href="https://https://www.instagram.com/">instagram</a>
     <a class="link" href="https://www.facebook.com/">facebook</a>

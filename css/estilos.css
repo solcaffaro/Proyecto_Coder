@@ -1,53 +1,29 @@
-/*index.html*/
-/*header*/
+/* Estilos especificos de index */
 .header {
   background-color: #d8d8d8;
   background-size: cover;
+  background-repeat: no-repeat;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   line-height: 0%;
   border-bottom: 3px solid #000000;
 }
-.header h1 {
-  color: #000000;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 40px;
-}
-.header a {
-  color: #000000;
-}
-.header li {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  padding: 5px;
-  color: #000000;
-  display: inline;
-  margin-left: 100px;
-}
-
-/*main*/
-main {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
 
 .caja {
-  background-image: url("medios/cieloliso.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("medios/cieloliso.jpeg");
   margin-top: 0px;
 }
 .caja p {
   color: #000000;
   font-style: italic;
   text-align: justify;
-  font-family: "bebas Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   margin-left: 80px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .caja .contenedor-imagenes {
   display: flex;
@@ -55,209 +31,149 @@ main {
   justify-content: center;
   align-items: center;
   margin-right: 0px;
+  margin-bottom: 0px;
+  width: cover;
+}
+.caja .contenedor-imagenes img {
+  margin: 5px;
   margin-bottom: 50px;
-  width: 50px;
-  height: 450px;
+  height: auto;
+  width: 32%;
 }
 
-.formulario {
-  background-color: #d8d8d8;
-  background-size: cover;
-  margin-top: 0px;
-  padding-bottom: 20px;
-}
-.formulario #newsletterSection {
-  font-style: #000000;
-  font-size: 15px;
-  text-decoration: none;
-  align-items: center;
-  margin-inline-start: 10px;
-  padding: 15px;
-  margin-left: 10px;
-}
-
-/*footer*/
-footer {
-  background-color: #000000;
-  position: absolute;
-  width: 100%;
-  min-width: 100%;
-}
-
-.link {
-  color: #F1F1F3;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 350px;
-  margin-bottom: 50px;
-}
-
-h3 {
-  color: #F1F1F3;
-  text-align: right;
-  font-family: "helvetica", serif;
-  font-size: 10px;
-}
-
-/*Contacto.html*/
-/*header*/
+/* Estilos especificos de contacto */
 .header {
   background-color: #d8d8d8;
   background-size: cover;
+  background-repeat: no-repeat;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   line-height: 0%;
   border-bottom: 3px solid #000000;
 }
-.header h1 {
-  color: #000000;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 40px;
-}
-.header a {
-  color: #000000;
-}
-.header li {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  padding: 5px;
-  color: #000000;
-  display: inline;
-  margin-left: 100px;
-}
 
-/*main*/
-main {
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.caja2 {
-  background-image: url("medios/cieloliso.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0px;
-}
 .caja2 h2 {
   color: #000000;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.caja2 p {
+.caja2 h4, .caja2 p {
   color: #000000;
-  font-style: italic;
-  text-align: justify;
-  font-family: "bebas Neue", sans-serif;
-  font-size: 20px;
-  margin-left: 80px;
-  margin-top: 40px;
-}
-.caja2 h4 {
-  color: #000000;
-  text-align: left;
+  text-align: center;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 10px;
-  margin-left: 80px;
-  margin-top: 40px;
 }
-.caja2 label {
-  color: #000000;
-  font-size: 20px;
-  text-decoration: none;
-  align-items: center;
-  margin-inline-start: 10px;
-}
-
-.formulario {
+.caja2 form {
   background-color: #d8d8d8;
-  background-size: cover;
-  margin-top: 0px;
-  padding-bottom: 20px;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.formulario #newsletterSection {
-  font-style: #000000;
-  font-size: 15px;
-  text-decoration: none;
-  align-items: center;
-  margin-inline-start: 10px;
-  padding: 15px;
-  margin-left: 10px;
-}
-
-/*footer*/
-footer {
-  background-color: #000000;
-  position: absolute;
+.caja2 form input:not([type=checkbox]),
+.caja2 form textarea,
+.caja2 form select {
+  display: block;
   width: 100%;
-  min-width: 100%;
-}
-
-.link {
-  color: #F1F1F3;
-  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 1.5rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 350px;
-  margin-bottom: 50px;
+  font-size: 1rem;
 }
-
-h3 {
-  color: #F1F1F3;
-  text-align: right;
+.caja2 form label {
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+}
+.caja2 form button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000;
+  color: #d8d8d8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.caja2 form button[type=submit]:hover {
+  background-color: black;
+}
+.caja2 .formulario {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d8d8d8;
+  padding: 40px;
+  margin-top: 0;
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.caja2 .formulario input[type=text],
+.caja2 .formulario input[type=email],
+.caja2 .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-family: "helvetica", serif;
-  font-size: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.caja2 .formulario button[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #d8d8d8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.caja2 .formulario:hover {
+  background-color: black;
 }
 
-/*Shop*/
-/*header*/
+/* Estilos especoficos de shop */
 .header {
   background-color: #d8d8d8;
   background-size: cover;
+  background-repeat: no-repeat;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   line-height: 0%;
   border-bottom: 3px solid #000000;
 }
-.header h1 {
-  color: #000000;
-  font-family: "Bebas Neue", sans-serif;
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 40px;
-}
-.header a {
-  color: #000000;
-}
-.header li {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  padding: 5px;
-  color: #000000;
-  display: inline;
-  margin-left: 100px;
-}
 
-/*main*/
 .caja3 {
-  background-image: url("../medios/cieloliso.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../medios/cieloliso.jpeg");
   margin-top: 0px;
 }
 .caja3 p {
   color: #000000;
   font-style: italic;
   text-align: justify;
-  font-family: "bebas Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 20px;
   margin-left: 80px;
   margin-top: 40px;
@@ -269,45 +185,110 @@ h3 {
   align-items: center;
 }
 
+.header {
+  background-color: #d8d8d8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  line-height: 0%;
+  border-bottom: 3px solid #000000;
+}
+
+/* Estilos globales para todos los .html */
+.header h1 {
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: left;
+  font-size: 40px;
+}
+.header a {
+  color: #000000;
+}
+.header li {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  padding: 5px;
+  color: #000000;
+  display: inline;
+  margin-left: 100px;
+}
+
+main {
+  background-image: url("../medios/cieloliso.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
 .formulario {
   background-color: #d8d8d8;
   background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0px;
   padding-bottom: 20px;
 }
 .formulario #newsletterSection {
-  font-style: #000000;
+  font-style: normal;
+  color: #000000;
   font-size: 15px;
   text-decoration: none;
-  align-items: center;
   margin-inline-start: 10px;
   padding: 15px;
   margin-left: 10px;
 }
 
-/*footer*/
+main {
+  background-image: url("../medios/cieloliso.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  background-color: #d8d8d8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+.formulario #newsletterSection {
+  font-style: normal;
+  color: #000000;
+  font-size: 15px;
+  text-decoration: none;
+  margin-inline-start: 10px;
+  padding: 15px;
+  margin-left: 10px;
+}
+
 footer {
   background-color: #000000;
-  position: absolute;
-  width: 100%;
-  min-width: 100%;
+  padding: 30px;
+  color: #d8d8d8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-.link {
-  color: #F1F1F3;
+footer a {
+  color: #d8d8d8;
   text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 15px;
-  margin-top: 50px;
-  margin-left: 350px;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  margin: auto;
+  transition: color 0.3s ease;
 }
-
-h3 {
-  color: #F1F1F3;
-  text-align: right;
-  font-family: "helvetica", serif;
+footer a:hover {
+  color: white;
+}
+footer h3 {
   font-size: 10px;
+  font-family: "helvetica", serif;
+  margin-top: 60px;
+  margin-left: auto;
+  text-align: right;
 }
 
 /*# sourceMappingURL=estilos.css.map */

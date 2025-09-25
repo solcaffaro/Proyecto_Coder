@@ -19,7 +19,7 @@
 
 <body>
     <!--Encabezado del sitio-->
-   <header>
+   <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
@@ -34,23 +34,22 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a></li>
-            </li>
-            <li class="nav-item dropdown">
+            </li> 
+           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Tienda
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="shop.html">Remeras</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
-                <li><a class="dropdown-item" href="shop.html">Pantalones</a></li><!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="shop.html">accesorios</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
+                <li><a class="dropdown-item" href="shop.html">Accesorios</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a></li>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -59,10 +58,6 @@
           </form>
         </div>
       </div>
-      <ul>
-        <!--Audio
-            <audio src="surf_mac_miller.mp3" controls></audio>-->
-      </ul>
     </nav>
   </header>
 
@@ -82,8 +77,9 @@
                   <img src="../medios/hoddies.jpg" alt="shop hoddies" width="500" height="300">
      </div>
    </section>
-   <section>
+  
     <!--Formulario -->
+    <section class="formulario">
       <div>
          <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
          <input type="text" name="email" placeholder="email" data-validate="{required:true, 'validate-email':true}">     

@@ -1,16 +1,39 @@
 /* Estilos especoficos de shop */
 
+// VARIABLES:
+$color-claro: #d8d8d8;
+$color-oscuro: #000000;
+$color-secundario: #f1f1f3;
+$fuente-principal: "Bebas Neue", sans-serif;
+$fuente-secundaria: "helvetica", serif;
+
+// MIXIN: 
+@mixin background-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// EXTEND:
+%estilos-base {
+    background-color: $color-claro;
+    @include background-cover;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    line-height: 0%;
+    border-bottom: 3px solid $color-oscuro;
+}
+
 .caja3 {
+  @include background-cover;
   background-image: url("../medios/cieloliso.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 0px;
 
   p {
-    color: #000000;
+    color: $color-oscuro;
     font-style: italic;
     text-align: justify;
-    font-family: "bebas Neue", sans-serif;
+    font-family: $fuente-principal;
     font-size: 20px;
     margin-left: 80px;
     margin-top: 40px;

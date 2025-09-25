@@ -11,7 +11,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
 
 <body>
     <!--Encabezado del sitio-->
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
 
@@ -38,9 +38,6 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
@@ -48,16 +45,17 @@
                                 Tienda
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="shop.html">Remeras</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Ropa</a></li>
                                 <!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
-                                <li><a class="dropdown-item" href="shop.html">Pantalones</a></li>
-                                <!--pantalones (averiguar como pongo de link una eccion de la pagina tienda)-->
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="shop.html">accesorios</a></li>
+                                <li><a class="dropdown-item" href="shop.html">Accesorios</a></li>
                                 <!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -66,15 +64,11 @@
                     </form>
                 </div>
             </div>
-            <ul>
-                <!--Audio
-            <audio src="surf_mac_miller.mp3" controls></audio>-->
-            </ul>
         </nav>
     </header>
 
     <main>
-    <section class="caja">
+    <section class="caja2">
         <h2>¿EN QUÉ TE PODEMOS AYUDAR?</h2>
 
         <p>Para hacer una pregunta, completa el formulario.</p>
@@ -135,17 +129,16 @@
             </div>
         </form>
     </section>
-    <section>
-      <!--Formulario -->
+    <!--Formulario -->
+    <section class="formulario">
       <div>
-        <label  id="newsletterSection" for="newsletter">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-        <input type="email" name="email" placeholder="email" required>
-    </div>
-
-    <div>
-        <input type="checkbox" name="newsletterTerms" required>
-        <label  id="newsletterSection" for="newsletterTerms">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
-    </div>
+         <label  id="newsletterSection" for="newsletter">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
+         <input type="email" name="email" placeholder="email" required>
+      </div>
+      <div>
+         <input type="checkbox" name="newsletterTerms" required>
+         <label  id="newsletterSection" for="newsletterTerms">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
+      </div>
     </section>
 </main>
 
