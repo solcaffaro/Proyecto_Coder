@@ -71,3 +71,18 @@ $fuente-secundaria: "helvetica", serif;
     margin-left: 0;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  
+    .caja{
+      
+      .contenedor-imagenes {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px       ;
+        }
+    }
+}
