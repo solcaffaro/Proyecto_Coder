@@ -312,4 +312,8 @@ footer h3 {
   text-align: right;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=estilos.css.map */
