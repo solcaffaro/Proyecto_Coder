@@ -26,8 +26,8 @@ $fuente-secundaria: "helvetica", serif;
 
 .caja {
   @include background-cover;
-  background-image: url("medios/cieloliso.jpeg");
   margin-top: 0px;
+  margin-bottom: 0px;
 
   p {
     color: $color-oscuro;
@@ -40,18 +40,34 @@ $fuente-secundaria: "helvetica", serif;
   }
 
   .contenedor-imagenes {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     margin-right: 0px;
     margin-bottom: 0px;
     width: cover; 
+    gap: 15px; 
+  
+    img {
+     margin: 5px;
+     margin-bottom: 10px;
+     height: 250px; 
+     width: 100%;
+     object-fit: cover;
+    }
   }
-  .contenedor-imagenes img {
-    margin: 5px;
-    margin-bottom: 50px;
-    height: auto; 
-    width: 32%;
+
+  .texto-centro {
+    grid-column: 2; 
+    grid-row: 2;   
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;  
+    margin-left: 0;
   }
 }

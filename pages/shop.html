@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOSE.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOSE.</title>
 
-    <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/estilos.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilos.css">
 
-    <!--Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap" rel="stylesheet">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Encabezado del sitio-->
-   <header class="header">
+  <!--Encabezado del sitio-->
+  <header class="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
         <!--Nombre de la marca-->
         <h1>NOSE.</h1>
-        
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,22 +36,25 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-            </li> 
-           <li class="nav-item dropdown">
+            </li>
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Tienda
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="shop.html">Remeras</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
+                <li><a class="dropdown-item" href="shop.html">Remeras</a></li>
+                <!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="shop.html">Accesorios</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
+                <li><a class="dropdown-item" href="shop.html">Accesorios</a></li>
+                <!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a></li>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -61,48 +66,125 @@
     </nav>
   </header>
 
-   <main>
-    <section>
-     <!--texto principal-->
-     <h2>Ropa Unisex</h2>
+  <main>
+    <!--Carrusel imagenes-->
+    <section class="caja3">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../medios/Rami.jpeg" class="d-block w-100" alt="Joven esquiando a lo lejos">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nueva Colección</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../medios/Rami2.jpeg" class="d-block w-100" alt="Joven esquiando más cerca">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Otoño/invierno 2025</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../medios/Rami3.jpeg" class="d-block w-100" alt="Chico esquiando cerca">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Solo para valientes</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     </section>
 
-     <!--Fotos de la ropa-->
-     <div class="contenedor-imagenes">
-                  <img src="../medios/remeras.jpg" alt="shop remeras" width="500" height="300">
-                  <img src="../medios/gorras.jpg" alt="shop gorras" width="500" height="300">
-                  <img src="../medios/pantalones.jpg" alt="shop pantalones" width="500" height="300">
-                  <img src="../medios/camperas.jpg" alt="shop camperas" width="500" height="300">
-                  <img src="../medios/denim.jpg" alt="shop denim" width="500" height="300">
-                  <img src="../medios/calzado.jpg" alt="shop calzado" width="500" height="300">
-                  <img src="../medios/hoddies.jpg" alt="shop hoddies" width="500" height="300">
-     </div>
-   </section>
-  
+     <!--Seccion de la tienda-->
+     <section class="caja3">
+         <h2>Ropa de Montaña</h2>
+
+         <!--Fotos de la ropa-->
+         <div class="contenedor-imagenes">
+
+           <div class="producto">
+             <img src="../medios/Campera.jpg" alt="shop Campera">
+             <P>CAMPERAS<br></P>
+           </div>
+
+           <div class="producto">
+             <img src="../medios/Peto.jpg" alt="shop Pantalones">
+             <p>PANTALONES DE NIEVE<br></p>
+           </div>
+
+           <div class="producto">
+             <img src="../medios/Camisetatermica.jpg" alt="shop ropa termica">
+             <P>ROPA TÉRMICA<br></P>
+           </div>
+       </div>
+    </section>
+
+    <section class="caja3">
+        <h2>ROPA URBANA</h2>
+        <!--Fotos de la ropa-->
+        <div class="contenedor-imagenes">
+
+         <div class="producto">
+           <img src="../medios/buzos.jpg" alt="shop buzo">
+           <p>BUZOS<br></p>
+         </div>
+         <div class="producto">
+          <img src="../medios/remeras2.jpg" alt="shop remera">
+           <p>REMERAS<br></p>
+         </div>
+         <div class="producto">
+          <img src="../medios/pantalones.jpg" alt="shop Pantalon">
+           <p>PANTALONES<br></p>
+         </div>
+      </div>
+    </section>
+
     <!--Formulario -->
     <section class="formulario">
       <div>
-         <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-         <input type="text" name="email" placeholder="email" data-validate="{required:true, 'validate-email':true}">     
-        </div>
+        <label id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu
+          primera compra!</label>
+        <input type="text" name="email" placeholder="email" data-validate="{required:true, 'validate-email':true}">
+      </div>
       <div>
         <input type="checkbox" name="checkboxText" required>
-        <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
+        <label id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de
+          Privacidad de NOSE.</label>
       </div>
     </section>
-    </main>
+  </main>
 
-   <footer>
-     
-        <!--Enlace absoluto-->
-        <a class= "link" href=https://https://www.instagram.com/">instagram</a>
-        <a class= "link" href="https://www.facebook.com/">facebook</a>
-        <a class= "link" href="https://x.com/">twitter</a>
+  <footer>
 
-        <h3>Desarrollado por sol caffaro</h3>
-    </footer>
+    <!--Enlace absoluto-->
+    <a class="link" href=https://https://www.instagram.com/">instagram</a>
+    <a class="link" href="https://www.facebook.com/">facebook</a>
+    <a class="link" href="https://x.com/">twitter</a>
 
-     <!--Js de Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    
+    <h3>Desarrollado por sol caffaro</h3>
+  </footer>
+
+  <!--Js de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

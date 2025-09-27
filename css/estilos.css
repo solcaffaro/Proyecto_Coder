@@ -13,8 +13,8 @@
 .caja {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("medios/cieloliso.jpeg");
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 .caja p {
   color: #000000;
@@ -26,19 +26,33 @@
   margin-top: 0px;
 }
 .caja .contenedor-imagenes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   margin-right: 0px;
   margin-bottom: 0px;
   width: cover;
+  gap: 15px;
 }
 .caja .contenedor-imagenes img {
   margin: 5px;
-  margin-bottom: 50px;
-  height: auto;
-  width: 32%;
+  margin-bottom: 10px;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.caja .texto-centro {
+  grid-column: 2;
+  grid-row: 2;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 0;
 }
 
 /* Estilos especificos de contacto */
@@ -53,6 +67,11 @@
   border-bottom: 3px solid #000000;
 }
 
+.caja2 {
+  background-image: url("../medios/cieloliso.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .caja2 h2 {
   color: #000000;
   text-align: center;
@@ -71,6 +90,7 @@
   width: 90%;
   max-width: 600px;
   margin: 2rem auto;
+  margin-bottom: 0px;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -108,7 +128,7 @@
   transition: background-color 0.3s ease;
 }
 .caja2 form button[type=submit]:hover {
-  background-color: black;
+  background-color: #000000, 10%;
 }
 .caja2 .formulario {
   background-size: cover;
@@ -116,6 +136,7 @@
   background-color: #d8d8d8;
   padding: 40px;
   margin-top: 0;
+  margin-bottom: 0;
   width: 90%;
   max-width: 600px;
   margin: 10px auto;
@@ -148,14 +169,12 @@
   transition: background-color 0.3s ease;
 }
 .caja2 .formulario:hover {
-  background-color: black;
+  background-color: #000000, 10%;
 }
 
 /* Estilos especoficos de shop */
 .header {
   background-color: #d8d8d8;
-  background-size: cover;
-  background-repeat: no-repeat;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -163,26 +182,52 @@
   border-bottom: 3px solid #000000;
 }
 
-.caja3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../medios/cieloliso.jpeg");
-  margin-top: 0px;
+main {
+  background-color: #f1f1f3;
 }
-.caja3 p {
+main .caja3 {
+  background-color: #f1f1f3;
+  margin: 0%;
+}
+main .caja3 h2 {
   color: #000000;
-  font-style: italic;
-  text-align: justify;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  margin-left: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 3px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
-.caja3 .contenedor-imagenes {
+main .caja3 .contenedor-imagenes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  gap: 40px;
+}
+main .caja3 .contenedor-imagenes .producto {
+  width: 250px;
+  text-align: center;
+}
+main .caja3 .contenedor-imagenes .producto img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .caja3 .contenedor-imagenes .producto img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+main .caja3 .contenedor-imagenes .producto p {
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  margin-top: 12px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .header {
@@ -216,11 +261,11 @@
 }
 
 main {
-  background-image: url("../medios/cieloliso.jpeg");
+  background-color: #f1f1f3;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .formulario {
@@ -228,32 +273,8 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0px;
-  padding-bottom: 20px;
-}
-.formulario #newsletterSection {
-  font-style: normal;
-  color: #000000;
-  font-size: 15px;
-  text-decoration: none;
-  margin-inline-start: 10px;
-  padding: 15px;
-  margin-left: 10px;
-}
-
-main {
-  background-image: url("../medios/cieloliso.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.formulario {
-  background-color: #d8d8d8;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .formulario #newsletterSection {
   font-style: normal;
@@ -281,7 +302,7 @@ footer a {
   transition: color 0.3s ease;
 }
 footer a:hover {
-  color: white;
+  color: #d8d8d8, 20%;
 }
 footer h3 {
   font-size: 10px;

@@ -13,7 +13,6 @@
 //tipografía:
  //font-family: "Bebas Neue", sans-serif;
 
-
  
 // VARIABLES:
 $color-claro: #d8d8d8;
@@ -27,7 +26,6 @@ $fuente-secundaria: "helvetica", serif;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 // EXTEND:
 %estilos-base {
@@ -43,7 +41,7 @@ $fuente-secundaria: "helvetica", serif;
 
 /* Estilos globales para todos los .html */
 
-// header y footer
+// Header
 .header {
     @extend %estilos-base;
 
@@ -70,42 +68,18 @@ $fuente-secundaria: "helvetica", serif;
 
 //Main
 main {
-    background-image: url("../medios/cieloliso.jpeg");
+    background-color: $color-secundario;
     @include background-cover;
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .formulario {
     background-color: $color-claro;
     @include background-cover;
     margin-top: 0px;
-    padding-bottom: 20px;
-
-    #newsletterSection {
-        font-style: normal;
-        color: $color-oscuro;
-        font-size: 15px;
-        text-decoration: none;
-        margin-inline-start: 10px;
-        padding: 15px;
-        margin-left: 10px;
-    }
-}
-
-//Main
-main {
-    background-image: url("../medios/cieloliso.jpeg");
-    @include background-cover;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-.formulario {
-    background-color: $color-claro;
-    @include background-cover;
-    margin-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 
     #newsletterSection {
         font-style: normal;
@@ -135,7 +109,7 @@ footer {
     transition: color 0.3s ease;
 
     &:hover {
-      color: lighten($color-claro, 20%);
+      color: ($color-claro, 20%);
     }
   }
 

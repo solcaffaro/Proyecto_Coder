@@ -7,6 +7,7 @@ $color-secundario: #f1f1f3;
 $fuente-principal: "Bebas Neue", sans-serif;
 $fuente-secundaria: "helvetica", serif;
 
+
 // MIXIN: 
 @mixin background-cover {
     background-size: cover;
@@ -22,10 +23,13 @@ $fuente-secundaria: "helvetica", serif;
     position: relative;
     line-height: 0%;
     border-bottom: 3px solid $color-oscuro;
-}
- .caja2 {
-
-   h2 {
+   }
+    .caja2 {
+      background-image: url("../medios/cieloliso.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+     h2 {
      color: $color-oscuro;
      text-align: center;
      font-family: $fuente-principal;
@@ -45,6 +49,7 @@ $fuente-secundaria: "helvetica", serif;
         width: 90%;
         max-width: 600px; 
         margin: 2rem auto; 
+        margin-bottom: 0px;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -84,7 +89,7 @@ $fuente-secundaria: "helvetica", serif;
             transition: background-color 0.3s ease;
 
             &:hover {
-                background-color: darken($color-oscuro, 10%);
+                background-color: ($color-oscuro, 10%);
             }
         }
     }
@@ -94,6 +99,7 @@ $fuente-secundaria: "helvetica", serif;
    background-color: $color-claro;
    padding: 40px;
    margin-top: 0;
+   margin-bottom: 0;
    width: 90%;
    max-width: 600px;
    margin: 10px auto;
@@ -101,35 +107,35 @@ $fuente-secundaria: "helvetica", serif;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: $fuente-secundaria;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
+   input[type="text"],
+   input[type="email"],
+   textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-family: $fuente-secundaria;
+     font-size: 16px;
+     box-sizing: border-box;
+   }
 
-  button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: $color-oscuro;
-    color: $color-claro;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: $fuente-principal;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-  }
+   button[type="submit"] {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     background-color: $color-oscuro;
+     color: $color-claro;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-family: $fuente-principal;
+     text-transform: uppercase;
+     transition: background-color 0.3s ease;
+   }
     
     &:hover {
-      background-color: darken($color-oscuro, 10%);
+      background-color: ($color-oscuro, 10%);
     }
  }
 }
