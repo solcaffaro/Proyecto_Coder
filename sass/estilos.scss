@@ -45,11 +45,14 @@ $fuente-secundaria: "helvetica", serif;
 .header {
     @extend %estilos-base;
 
-    h1 {
+    .nose {
         color: $color-oscuro;
         font-family: $fuente-principal;
         text-align: left;
-        font-size: 40px;
+        font-size: 60px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
     }
 
     a {

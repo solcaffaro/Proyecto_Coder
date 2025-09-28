@@ -24,52 +24,58 @@ $fuente-secundaria: "helvetica", serif;
     border-bottom: 3px solid $color-oscuro;
 }
 
-.caja {
-  @include background-cover;
+main {
+  background-color: $color-secundario;
   margin-top: 0px;
   margin-bottom: 0px;
+ 
+   .caja {
+     background-color: $color-secundario;
+     margin-top: 0px;
+     margin-bottom: 0px;
 
-  p {
-    color: $color-oscuro;
-    font-style: italic;
-    text-align: justify;
-    font-family: $fuente-principal;
-    font-size: 20px;
-    margin-left: 80px;
-    margin-top: 0px;
-  }
+      p {
+         color: $color-oscuro;
+         font-style: italic;
+         text-align: justify;
+         font-family: $fuente-principal;
+         font-size: 20px;
+         margin-left: 80px;
+         margin-top: 0px;
+        }
 
-  .contenedor-imagenes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    width: cover; 
-    gap: 15px; 
+     .contenedor-imagenes {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         flex-wrap: wrap;
+         justify-items: center;
+         align-items: center;
+         margin-right: 0px;
+         margin-bottom: 0px;
+         width: cover; 
+         gap: 15px; 
   
-    img {
-     margin: 5px;
-     margin-bottom: 10px;
-     height: 250px; 
-     width: 100%;
-     object-fit: cover;
-    }
-  }
+         img {
+             margin: 5px;
+             margin-bottom: 10px;
+             height: 250px; 
+             width: 100%;
+             object-fit: cover;
+           }
+       }
 
-  .texto-centro {
-    grid-column: 2; 
-    grid-row: 2;   
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
-    color: black;
-    text-align: left;
-    padding: 20px;
-    border-radius: 10px;  
-    margin-left: 0;
-  }
+     .texto-centro {
+         grid-column: 2; 
+         grid-row: 2;   
+         font-family: "Bebas Neue", sans-serif;
+         font-size: 24px;
+         color: black;
+         text-align: left;
+         padding: 20px;
+         border-radius: 10px;  
+         margin-left: 0;
+        }
+    }
 }
 
 
@@ -82,7 +88,7 @@ $fuente-secundaria: "helvetica", serif;
          display: flex;
          flex-direction: column;
          align-items: center;
-         gap: 10px       ;
+         gap: 10px;
         }
     }
 }

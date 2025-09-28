@@ -4,14 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOSE.</title>
+
+  <title>NOSE. | Ropa para Aventureros</title>
+
+  <!-- Descripción SEO -->
+  <meta name="description"
+    content="NOSE diseña ropa de montaña y urbana para quienes buscan aventura y estilo. Descubrí indumentaria técnica y urbana.">
+
+  <!-- Palabras clave -->
+  <meta name="keywords"
+    content="ropa de montaña, ropa urbana, indumentaria técnica, outdoor, snowboard, esquí, moda urbana">
+
+  <!-- Autor -->
+  <meta name="author" content="NOSE. - Sol Cáffaro">
 
   <!-- Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="favicon/favicon.png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="./css/estilos.css">
+
+  <!--Animate.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!--Fuentes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +41,17 @@
 </head>
 
 <body>
-  <!--Encabezado del sitio-->
-  <header class="header">
+  
+  <!-- Encabezado del sitio -->
+  <header class="header animate__animated animate__fadeInDown">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
 
         <!--Nombre de la marca-->
-        <h1>NOSE.</h1>
+        <h1 class="nose">
+          <a href="index.html">NOSE.</a>
+        </h1>
+
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,15 +68,16 @@
                 Tienda
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="pages/shop.html#montaña">Ropa de Montaña</a></li><!--Remeras (averiguar como pongo de link una eccion de la pagina tienda)-->
-                <li>
+                <li><a class="dropdown-item" href="pages/shop.html#montaña">Ropa de Montaña</a></li>
+               <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="pages/shop.html#urbana">Ropa Urbana</a></li><!--accesorios (averiguar como pongo de link una eccion de la pagina tienda)-->
-              </ul>
+                <li><a class="dropdown-item" href="pages/shop.html#urbana">Ropa Urbana</a></li>
+                </ul>
             </li>
-                        <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -64,8 +90,11 @@
   </header>
 
   <main>
+    <section class="about container my-5" data-aos="fade-up" data-aos-duration="1500">
+      <h2>Otoño/Invierno 2025</h2>
+    </section>
     <section class="caja">
-    
+
       <!--Imagen de la marca-->
       <div class="contenedor-imagenes">
         <img src="./medios2/grieta.jpg" alt="grietas en el tronador">
@@ -73,10 +102,11 @@
         <img src="./medios2/pico.jpg" alt="pico de nieve">
         <img src="./medios2/refugio.jpg" alt="chicos adentro del refugio otto meiling">
 
-           <!--¿Por qué NOSE?-->
-           <p class="texto-centro">En NOSE, diseñamos para quienes van al frente, para los que abrazan cada descenso y trazan su propio camino
-           en la nieve.<br> Nacimos de la adrenalina y la precisión que exige la cumbre, de esa energía que te impulsa
-           a conquistar cada giro.</p>
+        <!--¿Por qué NOSE?-->
+        <p class="texto-centro">En NOSE, diseñamos para quienes van al frente, para los que abrazan cada descenso y
+          trazan su propio camino
+          en la nieve.<br> Nacimos de la adrenalina y la precisión que exige la cumbre, de esa energía que te impulsa
+          a conquistar cada giro.</p>
 
         <img src="./medios2/chicoesquiando.jpeg" alt="chico esquiando">
         <img src="./medios2/pieles.jpg" alt="chicos con pieles de foca">
@@ -88,13 +118,15 @@
     <!--Formulario -->
     <section class="formulario">
       <div>
-        <label  id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu primera compra!</label>
-        <input type="text" name="email" placeholder="email"data-validate="{required:true, 'validate-email':true}">   
+        <label id="newsletterSection" for="emailAddress">Suscribite a nuestros newsletters y obtené un 10% off para tu
+          primera compra!</label>
+        <input type="text" name="email" placeholder="email" data-validate="{required:true, 'validate-email':true}">
       </div>
-     <div>
-       <input type="checkbox" name="checkboxText" required>
-       <label  id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de Privacidad de NOSE.</label>
-     </div>
+      <div>
+        <input type="checkbox" name="checkboxText" required>
+        <label id="newsletterSection" for="html: checkboxText">Acepto los Términos y Condiciones y las Políticas de
+          Privacidad de NOSE.</label>
+      </div>
     </section>
   </main>
 
@@ -110,6 +142,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+    <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

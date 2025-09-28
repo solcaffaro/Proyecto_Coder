@@ -10,13 +10,17 @@
   border-bottom: 3px solid #000000;
 }
 
-.caja {
-  background-size: cover;
-  background-repeat: no-repeat;
+main {
+  background-color: #f1f1f3;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.caja p {
+main .caja {
+  background-color: #f1f1f3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+main .caja p {
   color: #000000;
   font-style: italic;
   text-align: justify;
@@ -25,7 +29,7 @@
   margin-left: 80px;
   margin-top: 0px;
 }
-.caja .contenedor-imagenes {
+main .caja .contenedor-imagenes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
@@ -36,14 +40,14 @@
   width: cover;
   gap: 15px;
 }
-.caja .contenedor-imagenes img {
+main .caja .contenedor-imagenes img {
   margin: 5px;
   margin-bottom: 10px;
   height: 250px;
   width: 100%;
   object-fit: cover;
 }
-.caja .texto-centro {
+main .caja .texto-centro {
   grid-column: 2;
   grid-row: 2;
   font-family: "Bebas Neue", sans-serif;
@@ -250,11 +254,14 @@ main .caja3 .contenedor-imagenes .producto p {
 }
 
 /* Estilos globales para todos los .html */
-.header h1 {
+.header .nose {
   color: #000000;
   font-family: "Bebas Neue", sans-serif;
   text-align: left;
-  font-size: 40px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
 }
 .header a {
   color: #000000;
